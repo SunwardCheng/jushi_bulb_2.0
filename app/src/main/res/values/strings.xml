@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">灯泡控制器</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="send_udp">发送数据</string>
+    <string name="receive_udp">接收数据</string>
+    <string name="ip_config">IP端口设置</string>
+    <string name="wifi_config">WIFI设置</string>
+
+    <string name="open_bulb">打开灯泡</string>
+    <string name="close_bulb">关闭灯泡</string>
+    <string name="input_bulb_id">请输入灯泡编号</string>
+    <string name="connect_info">查看连接信息</string>
+    <string name="hide_connect_info">隐藏连接信息</string>
+
+    <string name="station_port">请输入端口</string>
+    <string name="station_ip">请输入IP</string>
+    <string name="scan_mdns">扫描服务</string>
+    <string name="connect_station">连接</string>
+    <string name="hand_input">手动输入</string>
+    <string name="commit_input">确认</string>
+    <string name="down_refresh">请下拉刷新</string>
+
+
+    <string name="wifi_info">查看WIFI信息</string>
+    <string name="hide_wifi_info">隐藏WIFI信息</string>
+    <string name="scan_wifi">扫描附近WIFI</string>
+    <string name="check_wifi">检查WIFI状态</string>
+    <string name="open_wifi">打开WIFI</string>
+    <string name="close_wifi">关闭WIFI</string>
+    <string name="wifi_list">查看WIFI列表</string>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_wifi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wifi.main.MainActivity">
+
+
+    <!--顶部标题栏-->
+    <!--<include layout="@layout/window_title"
+        android:id="@+id/title_home"/>-->
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/qmui_topbar_height"
+        android:background="@color/qmui_config_color_white">
+
+        <LinearLayout
+            android:id="@+id/connect_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/button_wrapper_style"
+                android:id="@+id/wifi_relative">
+
+                <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+                    android:id="@+id/wifi_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/qmui_config_color_gray_5"
+                    android:hint="@string/wifi_info">
+
+                    <requestFocus />
+                </com.qmuiteam.qmui.alpha.QMUIAlphaTextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/button_wrapper_style"
+                android:id="@+id/scan_wifi_relative">
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                    android:id="@+id/scan_wifi_"
+                    android:layout_width="120dp"
+                    android:layout_height="46dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="18dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="@string/scan_wifi"
+                    app:qmui_radius="4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/button_wrapper_style"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/wifilist_relative">
+
+                <ListView
+                    android:id="@+id/wifi_list"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wifi_list" >
+                </ListView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

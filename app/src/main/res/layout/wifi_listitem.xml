@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wifilistitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wifi.main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/connect_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            style="@style/button_wrapper_style"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18dp"
+                android:textColor="@color/qmui_config_color_gray_5"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/button_wrapper_style"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/wifi_level"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

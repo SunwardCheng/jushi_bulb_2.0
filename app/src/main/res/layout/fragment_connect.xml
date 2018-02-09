@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_connect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wifi.main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--顶部标题栏-->
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/qmui_topbar_height"/>
+
+        <RelativeLayout
+            style="@style/button_wrapper_style"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <com.qmuiteam.qmui.widget.QMUITabSegment
+                android:id="@+id/tabSegment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/tab_panel_bg"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/button_wrapper_style"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+
+            <FrameLayout
+                android:id="@+id/id_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <com.qmuiteam.qmui.widget.QMUIViewPager
+                android:id="@+id/contentViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/qmui_config_color_white"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

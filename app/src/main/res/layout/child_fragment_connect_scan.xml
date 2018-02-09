@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_connect_scan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wifi.main.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/connect_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/button_wrapper_style"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/down_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/down_refresh"
+                android:textColor="@color/qmui_config_color_gray_5"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="135dp"
+                tools:layout_editor_absoluteY="353dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/button_wrapper_style"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            <com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout
+                android:id="@+id/pull_to_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/qmui_config_color_background">
+
+                <ListView
+                    android:id="@+id/mdns_list"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ListView>
+
+            </com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

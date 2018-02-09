@@ -1,0 +1,91 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+    <!- Base application theme. -->
+    <!--<style name="AppTheme" parent="QMUI.Compat.NoActionBar">-->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- 配置Android提供的theme -->
+        <item name="android:textAppearanceListItemSmall">@style/QDTextAppearanceListItemSmall</item>
+        <item name="android:textAppearanceListItem">@style/QDtextAppearanceListItem</item>
+        <item name="android:listPreferredItemHeight">?attr/qmui_list_item_height_higher</item>
+        <item name="android:listPreferredItemHeightSmall">?attr/qmui_list_item_height</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--这个在value-21v中重写,如果sdk大于19的话请在value-21v 中做修改 同时这也是作者的一个bug,在给他的github中可查证-->
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="qmui_backgroundColor">@color/qmui_config_color_background</item>
+        <item name="android:actionBarSize">@dimen/qmui_dialog_action_button_radius</item>
+        <item name="actionBarSize">@dimen/activity_horizontal_margin</item>
+
+
+        <item name="qmui_config_color_blue">@color/qmui_config_color_blue</item><!--这是一个BUG覆盖了colorAccent的效果-->
+        <item name="qmui_config_color_red">@color/colorPrimaryDark</item>
+        <item name="qmui_config_color_background">@color/qmui_config_color_background</item>
+
+        <!-- 配置app自己的theme -->
+        <item name="qmui_alpha_pressed">?attr/qmui_config_color_blue</item><!--下拉刷新 控件默认颜色-->
+        <item name="qmui_common_list_item_chevron">@drawable/qmui_list_item_bg_with_border_bottom</item><!--向右按钮-->
+        <item name="qmui_dialog_action_text_negative_color">@color/qmui_dialog_action_text_negative_color</item><!--颜色cancle-->
+        <item name="qmui_dialog_action_text_color">@color/qmui_config_color_black</item><!--颜色confirm-->
+        <item name="qmui_dialog_title_text_color">@color/qmui_config_color_black</item><!--颜色Title-->
+        <item name="qmui_config_color_gray_4">@color/qmui_config_color_gray_4</item><!--颜色message-->
+
+    </style>
+
+
+
+
+    <style name="QDtextAppearanceListItem">
+        <item name="android:textColor">?attr/qmui_config_color_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">?attr/qmui_s_list_item_bg_with_border_bottom_inset_left
+        </item>
+    </style>
+
+
+    <style name="QDTextAppearanceListItemSmall">
+        <item name="android:textColor">?attr/qmui_config_color_gray_4</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?attr/qmui_s_list_item_bg_with_border_bottom_inset_left
+        </item>
+    </style>
+
+    <style name="main_rbt">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/color_radiobutton</item>
+    </style>
+
+    <style name="QDRadiusButton" parent="@style/Button">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">?attr/qmui_content_spacing_horizontal</item>
+        <item name="android:paddingRight">?attr/qmui_content_spacing_horizontal</item>
+        <item name="android:background">@drawable/s_radius_button_bg</item>
+        <item name="android:textColor">@color/s_app_color_blue_2</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="button_wrapper_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:background">@drawable/qmui_divider_bottom_bitmap</item>
+    </style>
+
+</resources>

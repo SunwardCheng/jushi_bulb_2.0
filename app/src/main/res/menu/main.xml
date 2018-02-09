@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wifi.main.MainActivity" >
+
+    <item
+        android:id="@+id/wifi_config"
+        android:orderInCategory="100"
+        android:title="@string/wifi_config"/>
+    <item
+        android:id="@+id/ip_config"
+        android:orderInCategory="100"
+
+        android:title="@string/ip_config"/>
+
+</menu>

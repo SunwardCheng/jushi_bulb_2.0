@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wifi.main.MainActivity">
+
+    <!--顶部标题栏-->
+    <!--<include layout="@layout/window_title"
+        android:id="@+id/title_home"/>-->
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/qmui_topbar_height"
+        android:background="@color/qmui_config_color_white">
+        <LinearLayout
+            android:id="@+id/control_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout style="@style/button_wrapper_style">
+
+                <com.qmuiteam.qmui.alpha.QMUIAlphaTextView
+                    android:id="@+id/messageID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:ems="10"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:textColor="@color/qmui_config_color_gray_5"
+                    android:hint="@string/input_bulb_id">
+
+                    <requestFocus />
+                </com.qmuiteam.qmui.alpha.QMUIAlphaTextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/button_wrapper_style">
+
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/connect_info"
+                    android:textColor="@color/qmui_config_color_gray_5"
+                    android:textSize="20dp"
+                    tools:layout_editor_absoluteX="135dp"
+                    tools:layout_editor_absoluteY="353dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/button_wrapper_style">
+
+                <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+                    android:id="@+id/send_udp"
+                    android:layout_width="120dp"
+                    android:layout_height="46dp"
+                    android:layout_centerInParent="true"
+                    android:textSize="18dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="@string/open_bulb"
+                    app:qmui_radius="4dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

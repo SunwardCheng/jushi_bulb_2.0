@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wifi.main.MainActivity" >
+
+    <item
+        android:id="@+id/scan_wifi"
+        android:orderInCategory="100"
+        android:title="@string/scan_wifi"/>
+    <item
+        android:id="@+id/check_wifi"
+        android:orderInCategory="100"
+        android:title="@string/check_wifi"/>
+    <item
+        android:id="@+id/open_wifi"
+        android:orderInCategory="100"
+        android:title="@string/open_wifi"/>
+    <item
+        android:id="@+id/close_wifi"
+        android:orderInCategory="100"
+        android:title="@string/close_wifi"/>
+
+</menu>
